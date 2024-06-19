@@ -19,13 +19,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  # Set your desired Node.js version
+        node-version: 'v22.3.0'
 
     - name: Install dependencies
       run: npm install
 
-    - name: Build
-      run: npm run build  # Replace with your build script
+    - name: run test
+      run: echo "running test"
 
-    - name: Run tests
-      run: npm test  # Replace with your test script
+    - name: Build
+      run: npm run build  
+
+    - name: run deployment
+      run: echo "this pipeline is running"
